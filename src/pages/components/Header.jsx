@@ -1,32 +1,87 @@
-import React from 'react'
+import React from "react";
 import { TbTruckDelivery } from "react-icons/tb";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaRegUser,FaFacebookF,FaInstagram  } from "react-icons/fa6";
-
+import { IoLocationOutline, IoBagOutline } from "react-icons/io5";
+import { FaRegUser, FaFacebookF, FaInstagram, FaHeart } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className='bg-[#DA0025]'>
-        <div className='flex'>
-            <div className='w-[40%]'>
-                <p><span><TbTruckDelivery/></span> Free Delivery on all orders Over £XX</p>
+    <>
+      <div className="sticky top-0">
+        <div className="bg-[#DA0025]">
+          <div className="flex justify-between px-10 p-3">
+            <div className="w-[40%]">
+              <p className="flex items-center gap-2 text-white font-[14px] font-[500]">
+                <span>
+                  <TbTruckDelivery className="w-[20px] h-[20px]" />
+                </span>{" "}
+                Free Delivery on all orders Over £XX
+              </p>
             </div>
             <div>
-                <ul>
-                     <li><Link><IoLocationOutline/> Put Your Location/Address</Link></li>
-                     <li><Link> Register</Link></li>
-                     <li><Link><FaRegUser /> Login</Link></li>
-                     <li>
-                        <ul>
-                            <li><Link><FaFacebookF /></Link></li>
-                            <li><Link><FaInstagram  /></Link></li>
-                         </ul>
-                     </li>
-                </ul>
+              <ul className="flex items-center gap-6 text-white">
+                <li>
+                  <Link className="flex items-center">
+                    <IoLocationOutline className="w-[20px] h-[20px]" /> Put Your
+                    Location/Address
+                  </Link>
+                </li>
+                <li>
+                  <Link> Register</Link>
+                </li>
+                <li>
+                  <Link className="flex items-center gap-2">
+                    <FaRegUser className="w-[16px] h-[16px]" /> Login
+                  </Link>
+                </li>
+                <li>
+                  <ul className="flex gap-4">
+                    <li>
+                      <Link>
+                        <FaFacebookF className="w-[18px] h-[18px]" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link>
+                        <FaInstagram className="w-[20px] h-[20px]" />
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-  )
-}
+        <header className="bg-black">
+          <div className="flex px-10 items-center justify-between">
+            <div className="">
+              <div>
+                <img
+                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741713282/Group_238817_uabyhv.png"
+                  className="w-[150px]"
+                  alt="Logo"
+                />
+              </div>
+            </div>
+            <div className="">
+              <ul className="flex gap-5">
+                <li>
+                  <Link>
+                    <FaHeart className="text-white" />
+                  </Link>
+                </li>
+                <li>
+                  <Link>
+                    <IoBagOutline className="text-white" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+      </div>
+    </>
+  );
+};
 
-export default Header
+export default Header;
