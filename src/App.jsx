@@ -8,6 +8,7 @@ import Card from "./pages/Card"
 import Address from "./pages/Address"
 import Checkout from "./pages/Checkout"
 import Gallery from "./pages/Gallery"
+import Thankyou from "./pages/Thankyou"
 
  
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
      <BrowserRouter>
        <Routes>
-          <Route index element={<Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/about-us" element={<About/>} />
           <Route path="/contact-us" element={<Contact/>} />
           <Route path="/my-card" element={<Card/>} />
@@ -26,6 +27,7 @@ function App() {
           <Route path="/contact-us" element={<Contact/>} />
           <Route path="/product" element={<Product/>} />
           <Route path="/product-details" element={<ProductDetail/>} />
+          <Route path="/thankyou" element={<Thankyou/>} />
        </Routes>
      </BrowserRouter>
   )
