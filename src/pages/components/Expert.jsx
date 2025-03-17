@@ -36,7 +36,14 @@ useEffect(() => {
 
 
 return (
-    <div>
+    <div className="relative">
+          <div>
+                <img
+                  className="absolute right-3 top-10"
+                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_5_bsdnfd.png"
+                  alt=""
+                />
+              </div>
      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4 ">
         <div className="mt-20 bg-white  rounded-[15px] ">
             <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-[#EB0029]">

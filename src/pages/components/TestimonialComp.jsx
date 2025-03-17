@@ -33,7 +33,19 @@ const TestimonialComp = () => {
       }, []);
 
   return (
-    <>
+<>
+    
+
+    <div className='relative'>
+    <div className="absolute right-1 bottom-1">
+            <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_7_ogukya.png" alt="" />
+          </div>
+            <div className="absolute left-1">
+                  <img
+                    src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_6_v2rzve.png"
+                    alt=""
+                  />
+                </div>
       <div
             className="mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden z-1 mt-[-110px]"
             style={{
@@ -653,8 +665,8 @@ const TestimonialComp = () => {
               </div>
             </div>
           </div>
+    </div>
     </>
-
   )
 }
 

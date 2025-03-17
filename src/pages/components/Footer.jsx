@@ -5,11 +5,11 @@ const Footer = () => {
     <div className="">
       <div className="px-20 py-12 bg-black relative">
 
-        <div className="absolute bottom-10 left-8"><img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741862635/tree_2.png_gp0svr.png" alt="" /></div>
-        <div className="absolute bottom-[-42px] right-0"><img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741878206/shape_5.png_e6h37w.png" alt="" /></div>
+        <div className="sm:absolute sm:block hidden bottom-10 left-8"><img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741862635/tree_2.png_gp0svr.png" alt="" /></div>
+        <div className="sm:absolute sm:block hidden bottom-[-42px] right-0"><img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741878206/shape_5.png_e6h37w.png" alt="" /></div>
 
-        <div className="flex justify-between">
-          <div className="w-[20%]">
+        <div className="sm:flex block justify-between">
+          <div className="sm:w-[20%]">
             <img
               src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741713282/Group_238817_uabyhv.png"
               alt=""
@@ -20,9 +20,9 @@ const Footer = () => {
             </p>
             {/* <img className="absolute left-[22px] my-8" src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741862635/tree_2.png_gp0svr.png" alt="" /> */}
           </div>
-          <div className="flex justify-between w-[60%]">
+          <div className="sm:flex justify-between sm:w-[60%]">
             <div>
-              <h4 className="text-[24px] text-white mb-6">Other Links</h4>
+              <h4 className="text-[24px] text-white mb-6 sm:mt-0 mt-5">Other Links</h4>
               <ul>
                 <li className="mb-6">
                   <a className="text-white" href="">
@@ -62,7 +62,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h4 className="text-[24px] text-white mb-6">Contact Now</h4>
+              <h4 className="text-[24px] text-white mb-6 sm:mt-0 mt-5">Contact Now</h4>
               <ul>
                 <li className="mb-6 flex gap-2 text-white">
                   <svg
@@ -236,7 +236,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-2 bg-[#1B1B1B] text-[#A5A5A5] justify-center font-[400] p-[9px]">
+      <div className="flex items-center gap-2 bg-[#1B1B1B] text-[#A5A5A5] justify-center font-[400] p-[9px] sm:text-[16px] text-[12px]">
         Copyright
         <svg
           width="16"

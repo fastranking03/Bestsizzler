@@ -10,7 +10,6 @@ import "swiper/css/navigation";
 import TestimonialComp from "./components/TestimonialComp";
 
 const About = () => {
- 
   return (
     <div>
       <Header />
@@ -92,7 +91,7 @@ const About = () => {
                 <h4 className="font-[600] text-[18px] text-[#010F1C]">
                   Discount Voucher
                 </h4>
-                <p className="text-[#4D5765] font-[400] mt-8">
+                <p className="text-[#4D5765] font-[400] mt-2">
                   Lorem Ipsum is simply dummy of the printing and typesetting
                   industry.
                 </p>
@@ -160,7 +159,7 @@ const About = () => {
                 <h4 className="font-[600] text-[18px] text-[#010F1C]">
                   Fresh Healthy Foods
                 </h4>
-                <p className="text-[#4D5765] font-[400] mt-8">
+                <p className="text-[#4D5765] font-[400] mt-2">
                   Lorem Ipsum is simply dummy of the printing and typesetting
                   industry.
                 </p>
@@ -228,7 +227,7 @@ const About = () => {
                 <h4 className="font-[600] text-[18px] text-[#010F1C]">
                   Fast Serve On Table
                 </h4>
-                <p className="text-[#4D5765] font-[400] mt-8">
+                <p className="text-[#4D5765] font-[400] mt-2">
                   Lorem Ipsum is simply dummy of the printing and typesetting
                   industry.
                 </p>
@@ -412,8 +411,21 @@ const About = () => {
         </div>
       </div>
 
+      <div className="absolute bottom-[-700px] left-16">
+        <img
+          src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_3_qpbyux.png"
+          alt=""
+        />
+      </div>
+
+      <div className="absolute right-16 bottom-[-1200px]">
+        <img
+          src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_4_bymu64.png"
+          alt=""
+        />
+      </div>
       <div
-        className="bg-no-repeat"
+        className="bg-no-repeat relative"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dj7wogsju/image/upload/v1741885033/bg_shape_5.png_uodatv.png')",
@@ -638,9 +650,13 @@ const About = () => {
         </div>
       </div>
 
-      <Expert/>
+    
+      <Expert />
 
-      <TestimonialComp/>
+    
+
+     
+      <TestimonialComp />
 
       <div>
         <div className="my-20 bg-white  rounded-[15px] ">
