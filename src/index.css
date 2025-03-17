@@ -1,1 +1,131 @@
 @import "tailwindcss";
+
+body {
+    font-family: "Cooper Black", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.montserrat p, .montserrat a{
+    font-family: "Montserrat";
+}
+.montserrat{
+    font-family: "Montserrat";
+    font-weight: 600; 
+}
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+@keyframes michiUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(60px);
+    }
+}
+
+@keyframes floatleftRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(60px);
+    }
+}
+@keyframes blink {
+    0%, 100% {
+       scale: .9;
+    }
+    50% {
+        scale: 1;
+     }
+  }
+  
+  .animate-blink {
+    animation: blink 2.5s infinite;
+  }
+  
+
+.animate-floating {
+    animation: michiUpDown 7s ease-in-out infinite;
+}
+
+.animate-menu-x {
+    animation: floatleftRight 7s ease-in-out infinite;
+}
+
+.mirchi-animate {
+    animation: michiUpDown 12s ease-in-out infinite;
+}
+.special-bg{
+    background-image: url(https://res.cloudinary.com/dj7wogsju/image/upload/v1741873156/offer_banner_1_we9hjt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.discount_style4 {
+    position: relative;
+    text-align: right;
+    padding: 30px;
+    width: 190.9px;
+    height: 170px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 1;
+    margin-left: 50px;
+}
+.discount_style4:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 47px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 3px solid #eb0029;
+    z-index: -1;
+}
+.discount_style4 .small-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+.discount_style4 .percentage {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #eb0029;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    text-align: center;
+}
+.discount_style4 .small-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 20px;
+}

@@ -1,6 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "./components/Header";
+import MenuComp from "./components/home/MenuComp";
+import AboutComp from "./components/home/AboutComp";
+import SpecialComp from "./components/home/SpecialComp";
+import Footer from "./components/Footer";
+import PopularComp from "./components/home/PopularComp";
+import GalleryComp from "./components/home/GalleryComp";
+import HeroComp from "./components/home/HeroComp";
 
 function Home() {
   return (
@@ -26,13 +33,15 @@ function Home() {
       </Helmet>
 
       <Header />
-      <section
-        className="bg-cover bg-center h-[700px]"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/dj7wogsju/image/upload/v1741711039/Background_1_ubetof.png')",
-        }}
-      ></section>
+
+      {/* Hero Section */}
+       <HeroComp/>
+       <MenuComp/>
+       <AboutComp/>
+       <SpecialComp/>
+       <PopularComp/>
+       <GalleryComp/>
+       <Footer/>
     </>
   );
 }
