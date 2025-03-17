@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+.ul-arrow:before {
+    background: linear-gradient(to left, #eb0029 0%, rgba(217, 217, 217, 0) 100%);
+    right: calc(100% + 20px);
+    content: '';
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.ul-arrow:after {
+    background: linear-gradient(to right, #eb0029 0%, rgba(217, 217, 217, 0) 100%);
+    left: calc(100% + 20px);
+    content: '';
+    height: 2px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.number-dots:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url("https://res.cloudinary.com/dj7wogsju/image/upload/v1742220009/download_bsfbsy.svg");
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.glide__bullet--active span{
+    background-color: #eb0029;
+}

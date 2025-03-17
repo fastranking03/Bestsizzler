@@ -6,7 +6,7 @@ const ProductDetail = () => {
   return (
     <div>
       <Header />
-      <div className="lx:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
+      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
         <div className="flex gap-12 my-20">
           <img 
             src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png" 

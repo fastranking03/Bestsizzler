@@ -53,7 +53,7 @@ export default function TabsLgPillLeadingIcon() {
 
   return (
     <>
-      <section className="lx:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4" aria-multiselectable="false">
+      <section className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4" aria-multiselectable="false">
         <ul
           className="flex justify-center gap-2"
           role="tablist"

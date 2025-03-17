@@ -63,7 +63,7 @@ const Contact = () => {
           Contact Us
         </h2>
       </div>
-      <div className="lx:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
+      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
         <div className="sm:flex block items-center gap-20 h-full mt-14">
           <div className="sm:w-[60%] bg-black p-10  rounded-[20px] mx-10 sm:mx-0">
             <p className="sm:text-[36px] text-[32px] mb-5 text-white">

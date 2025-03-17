@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="sticky top-0">
+      <div className="sticky top-0 z-90">
         <div className="bg-[#DA0025]">
           <div className="flex justify-between px-10 p-3">
             <div className="w-[40%]">
