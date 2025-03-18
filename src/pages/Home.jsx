@@ -31,7 +31,7 @@ function Home() {
         <meta name="twitter:image" content="https://res.cloudinary.com/dj7wogsju/image/upload/v1741711039/Background_1_ubetof.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
-
+      
       <Header />
 
       {/* Hero Section */}

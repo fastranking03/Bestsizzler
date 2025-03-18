@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
-body {
-    font-family: "Cooper Black", serif;
-    font-style: normal;
-    font-weight: 400;
-}
+ 
 .montserrat p, .montserrat a{
     font-family: "Montserrat";
 }
