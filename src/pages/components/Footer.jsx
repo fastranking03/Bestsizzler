@@ -250,7 +250,7 @@ const Footer = () => {
             fill="#A5A5A5"
           />
         </svg>
-        2024 Sizzler . All Rights Reserved. Powered By Fast Ranking{" "}
+        2024 Sizzler . All Rights Reserved. Powered By Fast Ranking
       </div>
     </div>
   );
