@@ -7,14 +7,14 @@ const ProductDetail = () => {
     <div>
       <Header />
       <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
-        <div className="flex gap-12 my-20">
+        <div className="sm:flex block gap-12 my-20 mx-10 sm:mx-0">
           <img 
             src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png" 
             alt="Product Image" 
           />
           <div>
-            <h2 className='text-[32px] font-[600] text-black'>Chicken Wraps Recipe</h2>
-            <ul className='flex items-center mt-2'>
+            <h2 className='sm:text-[32px] text-[20px] sm:mt-0 mt-5 font-[600] text-black'>Chicken Wraps Recipe</h2>
+            <ul className='sm:flex hidden items-center mt-2'>
               <li>
 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.9216 5.2603L15.1916 7.8503C15.2993 8.06835 15.4585 8.25693 15.6554 8.39978C15.8522 8.54263 16.0809 8.63547 16.3216 8.6703L19.1716 9.0803C19.4487 9.12054 19.7091 9.23759 19.9232 9.41817C20.1373 9.59876 20.2965 9.83568 20.3829 10.1021C20.4693 10.3685 20.4794 10.6538 20.412 10.9257C20.3446 11.1975 20.2024 11.4451 20.0016 11.6403L17.9416 13.6403C17.7619 13.8129 17.6284 14.0279 17.5533 14.2655C17.4781 14.5031 17.4638 14.7557 17.5116 15.0003L17.9916 17.8403C18.0378 18.1152 18.0064 18.3975 17.9011 18.6556C17.7957 18.9137 17.6206 19.1373 17.3952 19.3014C17.1699 19.4655 16.9033 19.5635 16.6253 19.5845C16.3473 19.6055 16.069 19.5487 15.8216 19.4203L13.2716 18.0603C13.0556 17.9473 12.8154 17.8882 12.5716 17.8882C12.3278 17.8882 12.0876 17.9473 11.8716 18.0603L9.32157 19.4003C9.07413 19.5287 8.79582 19.5855 8.51785 19.5645C8.23989 19.5435 7.97328 19.4455 7.74793 19.2814C7.52258 19.1173 7.34741 18.8937 7.24207 18.6356C7.13673 18.3775 7.10539 18.0952 7.15157 17.8203L7.63157 15.0003C7.67413 14.7603 7.65718 14.5136 7.58221 14.2817C7.50724 14.0499 7.37655 13.8399 7.20157 13.6703L5.14157 11.6703C4.93172 11.4764 4.78159 11.2267 4.70885 10.9504C4.63612 10.6741 4.64379 10.3828 4.73098 10.1107C4.81817 9.83865 4.98124 9.59714 5.20102 9.4146C5.42079 9.23206 5.68813 9.11608 5.97157 9.0803L8.82157 8.6703C9.0623 8.63547 9.29094 8.54263 9.48779 8.39978C9.68465 8.25693 9.84382 8.06835 9.95157 7.8503L11.2216 5.2603C11.3471 5.00978 11.5399 4.79914 11.7783 4.65193C12.0167 4.50472 12.2914 4.42676 12.5716 4.42676C12.8518 4.42676 13.1265 4.50472 13.3649 4.65193C13.6033 4.79914 13.796 5.00978 13.9216 5.2603Z" fill="#F7B32B"/>
@@ -42,6 +42,8 @@ const ProductDetail = () => {
 </li>
             </ul>
 
+
+<div className='flex sm:flex-col flex-col-reverse'>
             <div className='flex justify-between items-center mt-2'>
 <div className='flex gap-4 items-center'>
   <p className='text-[#8E8E8E] text-[28px] font-[500]'>₤9.00 </p>
@@ -58,14 +60,14 @@ const ProductDetail = () => {
             <p className='text-[18px] text-[#787878] mt-3'>Special mix of mango, peach, strawberry, pineapple, passion 
 fruit, and orange. Cras dapibus. Vivamus elementum semper 
 nisi. Aenean vulputate.</p>
-
+</div>
 <ul className='mt-3'>
-  <li className='mb-2 text-[#787878] font-[500]'>SKU: PT020</li>
+  <li className='mb-2 text-[#787878] font-[500]  sm:block hidden'>SKU: PT020</li>
   <li className='mb-2 text-[#787878] font-[500]'>Categories: Drinks, Tea</li>
   <li className='text-[#787878] font-[500]'>Tags: Fast food , Burger</li>
 </ul>
 
-<div className='flex gap-4 items-center mt-5'>
+<div className='sm:flex gap-4 items-center mt-5 hidden'>
   <button className='w-[60%] bg-[#DA0025] rounded-full px-2 py-3 text-white flex gap-1 items-center justify-center text-center font-[600]'>
     
 <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +92,7 @@ Add to Cart
         
         <TabsLgBasic />
 
-        <div className='mt-10'>
+        <div className='sm:mt-10'>
 <h2 className='text-black font-[400] text-[60px]'>
 You May Also Like
 </h2>

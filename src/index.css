@@ -36,3 +36,13 @@
 .glide__bullet--active span{
     background-color: #eb0029;
 }
+
+.dropbtn:hover + .dropdown-content {
+    display: block;
+  }
+  .relative:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover svg path {
+    fill: red;
+  }

@@ -52,7 +52,7 @@ const Contact = () => {
     <div>
       <Header />
       <div
-        className="h-[400px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
+        className="h-[300px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dj7wogsju/image/upload/v1741711262/Group_238820_fsqqzy.png')",

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay  } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Expert from "./components/Expert";
@@ -14,7 +14,7 @@ const About = () => {
     <div>
       <Header />
       <div
-        className="h-[400px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
+        className="h-[300px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dj7wogsju/image/upload/v1741711262/Group_238820_fsqqzy.png')",
@@ -668,9 +668,13 @@ const About = () => {
           </h3>
           <div className="mt-10">
             <Swiper
-              modules={[Pagination, Scrollbar, A11y]} // Removed Navigation module as we are not using it
+              modules={[Pagination, Scrollbar, A11y, Autoplay]} // Removed Navigation module as we are not using it
               spaceBetween={20}
               slidesPerView={7}
+              autoplay={{
+                delay: 1000, // Auto slide delay in milliseconds (3000ms = 3 seconds)
+                disableOnInteraction: false, // Keep autoplay even after user interaction
+              }}
               loop={true} // Enable looping
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}

@@ -25,37 +25,37 @@ const Footer = () => {
               <h4 className="text-[24px] text-white mb-6 sm:mt-0 mt-5">Other Links</h4>
               <ul>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Home
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     About Us
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Gallery
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Testimonial
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Contact Us
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a className="text-white" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="">
                     Terms and Conditions
                   </a>
                 </li>
@@ -89,7 +89,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <a
-                    className="flex gap-2 items-center text-white"
+                    className="flex gap-2 items-center text-white hover:text-[#DA0025]"
                     href="tel:+44 01494 473000"
                   >
                     <svg
@@ -116,7 +116,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <a
-                    className="flex gap-2 items-center text-white"
+                    className="flex gap-2 items-center text-white hover:text-[#DA0025]"
                     href="mailto:info@bestsizzler.com"
                   >
                     <svg
