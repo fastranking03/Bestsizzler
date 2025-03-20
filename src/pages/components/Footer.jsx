@@ -25,37 +25,32 @@ const Footer = () => {
               <h4 className="text-[24px] text-white mb-6 sm:mt-0 mt-5">Other Links</h4>
               <ul>
                 <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="home">
                     Home
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="about-us">
                     About Us
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="gallery">
                     Gallery
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
-                    Testimonial
-                  </a>
-                </li>
-                <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="contact-us">
                     Contact Us
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="privacypolicy">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a className="text-white hover:text-[#DA0025]" href="">
+                  <a className="text-white hover:text-[#DA0025]" href="termsandconditions">
                     Terms and Conditions
                   </a>
                 </li>

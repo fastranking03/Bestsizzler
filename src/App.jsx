@@ -9,6 +9,8 @@ import Address from "./pages/Address"
 import Checkout from "./pages/Checkout"
 import Gallery from "./pages/Gallery"
 import Thankyou from "./pages/Thankyou"
+import PrivacyPolicy from "./pages/PrivacyPolicy"
+import TermsandConditions from "./pages/TermsandConditions"
 
  
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path="/product" element={<Product/>} />
           <Route path="/product-details" element={<ProductDetail/>} />
           <Route path="/thankyou" element={<Thankyou/>} />
+          <Route path="/termsandconditions" element={<TermsandConditions/>} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
        </Routes>
      </BrowserRouter>
   )

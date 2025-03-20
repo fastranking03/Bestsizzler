@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ResponsiveHeader from "./components/ResponsiveHeader";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,6 +52,7 @@ const Contact = () => {
   return (
     <div>
       <Header />
+      <ResponsiveHeader/>
       <div
         className="h-[300px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
         style={{
@@ -63,9 +65,9 @@ const Contact = () => {
           Contact Us
         </h2>
       </div>
-      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
-        <div className="sm:flex block items-center gap-20 h-full mt-14">
-          <div className="sm:w-[60%] bg-black p-10  rounded-[20px] mx-10 sm:mx-0">
+      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-2">
+        <div className="flex  sm:flex-row flex-col-reverse items-center gap-20 h-full sm:mt-14">
+          <div className="sm:w-[60%] w-full bg-black sm:p-10 p-5  rounded-[20px] mx-3 sm:mx-0">
             <p className="sm:text-[36px] text-[32px] mb-5 text-white">
               Stay connected with us to <br className="sm:block hidden" />
               explore the taste of Best Sizzlers

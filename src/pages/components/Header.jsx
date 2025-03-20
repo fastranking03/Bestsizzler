@@ -202,189 +202,73 @@ const Header = () => {
                     />
                   </svg>
                 </a>
-                <div className="dropdown-content absolute hidden bg-white text-black shadow-lg rounded mt-2 w-200  z-10 pr-40 p-5">
-                  <div className="flex justify-between ">
-                    <div>
+                <div className="dropdown-content absolute hidden bg-white text-black shadow-lg rounded mt-2 w-200  z-10 pr-20 p-5">
+                  <div className="flex flex-wrap justify-between items-center">
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471937/OBJECTS_buxsga.png" alt="" />
                         DONNER
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Frame_cwfw4s.png" alt="" />
                         WRAPS
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_239205_givbng.png" alt="" />
                         BURGER
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
-                        SIDE
-                      </a>
-                      <a
-                        href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Cakes_l97qpi.png" alt="" />
                         DESSERTS
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                      <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Asset_3_4x_1_gap0o0.png" alt="" />
                         PERI PERI CHICKEN
                       </a>
-                    </div>
-                    <div>
+                   
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                          <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/hand-drawn-fried-chicken-illustration_561641-3588_1_llkwuj.png" alt="" />
                         FRIED ZINGER CHICKEN
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/plate-with-toast-face-shape-with-apple-table_1_uplmyc.png" alt="" />
                         KIDS MEAL
                       </a>
                       <a
                         href="#"
                         className="block flex gap-2 items-center  transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_su4vtw.png" alt="" />
                         DRINKS OPTIONS
                       </a>
-                      <a
+                     
+                    </div>
+                    <div className="justify-end flex">
+                    <a
                         href="#"
-                        className="block flex gap-2 items-center  transition-all text-[24px] font-[600] transform hover:translate-x-2 text-[#eb0029] hover:svg-fill-red"
+                        className="block flex gap-2 items-center  transition-all px-3 text-[24px] font-[600] transform hover:translate-x-2 text-[#eb0029] rounded-full border-2 border-[#eb0029] hover:svg-fill-red w-[50%]"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="12"
-                          height="24"
-                          viewBox="0 0 12 24"
-                        >
-                          <path
-                            fill="#000"
-                            fill-rule="evenodd"
-                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-                          />
-                        </svg>
+                        
                         MEAL DEAL COMBO
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -398,44 +282,24 @@ const Header = () => {
                           />
                         </svg>
                       </a>
-                    </div>
                   </div>
-                </div>
+                  </div>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="">About Us</a>
+                <a className="hover:text-[#DA0025]" href="about-us">About Us</a>
               </li>
               <li>
                 <a className="hover:text-[#DA0025]" href="">Shop</a>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="">Gallery</a>
+                <a className="hover:text-[#DA0025]" href="gallery">Gallery</a>
               </li>
             </ul>
           </div>
 
           <div>
-            <ul className="flex items-center gap-6">
-              <li>
-                <a href="">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M25.4279 17.523L17.8853 25.067C17.3852 25.5669 16.7071 25.8478 15.9999 25.8478C15.2928 25.8478 14.6147 25.5669 14.1146 25.067L6.57194 17.5244C5.94844 16.9063 5.45315 16.1712 5.11452 15.3612C4.77588 14.5512 4.60057 13.6822 4.59865 12.8043C4.59673 11.9264 4.76823 11.0567 5.10331 10.2452C5.4384 9.43376 5.93046 8.69646 6.55125 8.07567C7.17205 7.45487 7.90935 6.96281 8.72082 6.62773C9.5323 6.29264 10.402 6.12114 11.2799 6.12306C12.1578 6.12499 13.0267 6.3003 13.8367 6.63893C14.6467 6.97756 15.3819 7.47285 15.9999 8.09636C17.2554 6.87219 18.9425 6.19191 20.696 6.2029C22.4494 6.21389 24.1279 6.91525 25.3679 8.15506C26.6079 9.39486 27.3095 11.0733 27.3207 12.8267C27.332 14.5802 26.6519 16.2674 25.4279 17.523Z"
-                      stroke="white"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li>
+             
+              <div>
                 <a href="">
                   <svg
                     width="22"
@@ -450,8 +314,8 @@ const Header = () => {
                     />
                   </svg>
                 </a>
-              </li>
-            </ul>
+                </div>
+            
           </div>
         </div>
       </div>

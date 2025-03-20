@@ -61,7 +61,7 @@ export default function TabsLgPillLeadingIcon() {
         >
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded px-6 text-sm font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 1
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -85,7 +85,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded px-6 text-sm font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 2
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -109,7 +109,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded px-6 text-sm font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 3
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -133,7 +133,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded px-6 text-sm font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 4
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -163,7 +163,7 @@ export default function TabsLgPillLeadingIcon() {
               tabSelected.currentTab === null ? "" : "hidden"
             }`}
           >
-            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mt-10">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 sm:mt-10 m-5">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
@@ -205,7 +205,7 @@ export default function TabsLgPillLeadingIcon() {
             aria-labelledby="tab-label-1di"
             tabindex="-1"
           >
-            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mt-10">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-5 sm:mt-10">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
@@ -247,7 +247,7 @@ export default function TabsLgPillLeadingIcon() {
             aria-labelledby="tab-label-2di"
             tabindex="-1"
           >
-            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mt-10">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-5 sm:mt-10">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
@@ -289,7 +289,7 @@ export default function TabsLgPillLeadingIcon() {
             aria-labelledby="tab-label-3di"
             tabindex="-1"
           >
-            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mt-10">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-5 sm:mt-10">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
@@ -331,7 +331,7 @@ export default function TabsLgPillLeadingIcon() {
             aria-labelledby="tab-label-4di"
             tabindex="-1"
           >
-            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mt-10">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-4 mt-5 sm:mt-10">
               <a href="#">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"

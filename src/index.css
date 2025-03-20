@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+body{
+  overflow-x: hidden;
+}
 .ul-arrow:before {
     background: linear-gradient(to left, #eb0029 0%, rgba(217, 217, 217, 0) 100%);
     right: calc(100% + 20px);
@@ -45,4 +47,15 @@
   }
   .dropdown-content a:hover svg path {
     fill: red;
+  }
+
+  .bestsizzler-about-us{
+    background-image: url(https://res.cloudinary.com/dj7wogsju/image/upload/v1741883446/Component_8_mp8ydl.png);
+ 
+  }
+
+  @media screen and (max-width: 768px) {
+    .bestsizzler-about-us{
+      background-size: 62% 100%;
+    }
   }

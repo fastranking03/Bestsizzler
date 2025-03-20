@@ -39,7 +39,7 @@ return (
     <div className="relative">
           <div>
                 <img
-                  className="absolute right-3 top-10"
+                  className="sm:absolute right-3 top-10 sm:block hidden"
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_5_bsdnfd.png"
                   alt=""
                 />

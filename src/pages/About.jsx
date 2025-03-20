@@ -1,18 +1,26 @@
 import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay  } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Expert from "./components/Expert";
 import "swiper/css/navigation";
 
 import TestimonialComp from "./components/TestimonialComp";
+import ResponsiveHeader from "./components/ResponsiveHeader";
 
 const About = () => {
   return (
     <div>
       <Header />
+      <ResponsiveHeader/>
       <div
         className="h-[300px] mb-4 bg-cover bg-center flex justify-center items-center w-full overflow-hidden"
         style={{
@@ -21,15 +29,14 @@ const About = () => {
         }}
         id="Hero"
       >
-        <h2 className="text-center text-white text-[80px] font-[400]">
+        <h1 className="text-center text-white sm:text-[80px] text-[40px] font-[500]">
           About Us
-        </h2>
+        </h1>
       </div>
 
       <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
-        <h2 className="text-center text-[48px] font-[700] mt-20">About Us</h2>
         <div className="mt-10">
-          <ul className="flex items-center gap-4">
+          <ul className="grid sm:grid-cols-3 grid-cols-1 items-center gap-4">
             <li className="flex items-center gap-3 border border-[#EB0029] p-3 rounded-[15px]">
               <div>
                 <svg
@@ -237,97 +244,103 @@ const About = () => {
         </div>
       </div>
 
-      <div
-        className="bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://res.cloudinary.com/dj7wogsju/image/upload/v1741883446/Component_8_mp8ydl.png')",
-        }}
-      >
-        <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4 mt-20">
-          <div className="flex items-center gap-10">
+      {/* About */}
+      <div className="text-center sm:hidden block mt-12 mx-4">
+        <h6 className="text-[16px] font-[500]">About Us</h6>
+        <h2 className="text-[32px] font-[700] leading-10 mb-3">Put Your Page <br /> Heading Here...</h2>
+        <p className="text-gray-500">
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet.
+        </p>
+      </div>
+      <div className="bg-no-repeat bestsizzler-about-us">
+        <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4 sm:mt-20 mt-10">
+          <div className="sm:flex items-center gap-10">
             <img
               src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741883586/about_1_1.png_jcsyqm.png"
               alt=""
             />
-            <div>
-              <h4 className="flex items-center gap-2 text-[18px] font-[700] text-[#EB0029]">
-                <svg
-                  width="23"
-                  height="29"
-                  viewBox="0 0 23 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_247_16826)">
-                    <g clip-path="url(#clip1_247_16826)">
-                      <g clip-path="url(#clip2_247_16826)">
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.5771 11.8374C22.991 12.2684 21.9083 12.808 18.2019 16.1598C16.0182 18.1352 16.3366 16.1177 12.9664 18.3941C10.665 19.9486 8.43205 22.2228 6.64415 23.8832C5.61307 24.8423 1.63245 28.2451 0.773606 27.1549C-0.0870345 26.0661 4.19277 23.1524 5.39821 22.3992C7.48619 21.0967 10.2974 19.5116 12.3893 17.7065C15.4502 15.0644 13.3181 14.92 15.8136 13.3163C20.0489 10.5939 20.8499 9.71847 21.2004 10.1987L16.9068 13.3753C16.82 13.4409 16.8125 13.5703 16.89 13.6617C17.0169 13.812 17.0865 13.7825 17.1861 13.7086C18.5911 12.6739 19.9949 11.6395 21.3996 10.6048C21.718 10.3691 21.9806 10.6876 21.6571 10.9333L17.503 14.0866C17.4151 14.1522 17.4163 14.2891 17.4862 14.3719C17.5561 14.4547 17.6957 14.4856 17.7824 14.4189C19.1616 13.3547 20.542 12.2919 21.9221 11.2274C22.2323 10.9877 22.4604 11.2769 22.1576 11.5212L18.0993 14.7954C18.0024 14.8745 17.9559 14.9312 18.0825 15.0818C18.159 15.1732 18.292 15.1955 18.3787 15.1288"
-                          fill="#5C6571"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M19.9482 23.7783C21.5178 24.9743 23.1382 26.4764 22.5288 27.1639C21.8875 27.8845 19.8564 26.5595 18.2667 25.3136C17.021 24.3356 13.9564 20.5965 12.5136 20.8947C11.644 21.0734 11.8829 21.3665 11.3041 20.9243C7.70859 18.1747 4.44291 15.9658 1.6703 12.4501C0.767646 11.3062 0.302092 10.0182 0.990371 10.0756C1.83054 10.1484 13.6247 19.2677 13.7581 19.3671C15.7997 20.8974 18.8124 22.9121 19.9482 23.7783Z"
-                          fill="#5C6571"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M9.13159 12.673C8.5488 12.0337 8.01013 11.2364 7.74723 9.92941C7.23583 7.3929 8.07325 6.36058 8.84357 1.60334C8.86471 1.46736 9.10615 1.54751 9.51184 1.46736C8.6401 6.68628 7.74845 7.69458 8.32573 10.5544C8.50437 11.4345 8.78964 12.1138 9.13159 12.673ZM15.2252 0.744226C16.126 6.08862 17.1696 7.24701 16.5516 10.0924C15.6336 14.3153 11.9401 13.817 12.1479 17.9166V24.7985C12.1479 26.1595 13.9152 26.4342 14.9825 26.6167C16.2253 26.8274 16.5277 26.9297 16.4897 27.2119C16.4499 28.0221 12.507 28.1914 11.6644 28.1914C10.8202 28.1914 6.87458 28.0218 6.83505 27.2119C6.79797 26.9297 7.09917 26.8274 8.3435 26.6167C9.4092 26.4342 11.1465 26.1598 11.1465 24.7985V17.9166C11.3527 13.817 7.69085 14.3153 6.77407 10.0924C6.15451 7.24671 7.16904 6.08472 8.10052 0.744226C8.22676 0.0102883 15.0998 0.00398427 15.2252 0.744226Z"
-                          fill="#FF9D2D"
-                        />
+            <div className="sm:block hidden">
+              <div>
+                <h4 className="flex items-center gap-2 text-[18px] font-[700] text-[#EB0029]">
+                  <svg
+                    width="23"
+                    height="29"
+                    viewBox="0 0 23 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_247_16826)">
+                      <g clip-path="url(#clip1_247_16826)">
+                        <g clip-path="url(#clip2_247_16826)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M22.5771 11.8374C22.991 12.2684 21.9083 12.808 18.2019 16.1598C16.0182 18.1352 16.3366 16.1177 12.9664 18.3941C10.665 19.9486 8.43205 22.2228 6.64415 23.8832C5.61307 24.8423 1.63245 28.2451 0.773606 27.1549C-0.0870345 26.0661 4.19277 23.1524 5.39821 22.3992C7.48619 21.0967 10.2974 19.5116 12.3893 17.7065C15.4502 15.0644 13.3181 14.92 15.8136 13.3163C20.0489 10.5939 20.8499 9.71847 21.2004 10.1987L16.9068 13.3753C16.82 13.4409 16.8125 13.5703 16.89 13.6617C17.0169 13.812 17.0865 13.7825 17.1861 13.7086C18.5911 12.6739 19.9949 11.6395 21.3996 10.6048C21.718 10.3691 21.9806 10.6876 21.6571 10.9333L17.503 14.0866C17.4151 14.1522 17.4163 14.2891 17.4862 14.3719C17.5561 14.4547 17.6957 14.4856 17.7824 14.4189C19.1616 13.3547 20.542 12.2919 21.9221 11.2274C22.2323 10.9877 22.4604 11.2769 22.1576 11.5212L18.0993 14.7954C18.0024 14.8745 17.9559 14.9312 18.0825 15.0818C18.159 15.1732 18.292 15.1955 18.3787 15.1288"
+                            fill="#5C6571"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19.9482 23.7783C21.5178 24.9743 23.1382 26.4764 22.5288 27.1639C21.8875 27.8845 19.8564 26.5595 18.2667 25.3136C17.021 24.3356 13.9564 20.5965 12.5136 20.8947C11.644 21.0734 11.8829 21.3665 11.3041 20.9243C7.70859 18.1747 4.44291 15.9658 1.6703 12.4501C0.767646 11.3062 0.302092 10.0182 0.990371 10.0756C1.83054 10.1484 13.6247 19.2677 13.7581 19.3671C15.7997 20.8974 18.8124 22.9121 19.9482 23.7783Z"
+                            fill="#5C6571"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M9.13159 12.673C8.5488 12.0337 8.01013 11.2364 7.74723 9.92941C7.23583 7.3929 8.07325 6.36058 8.84357 1.60334C8.86471 1.46736 9.10615 1.54751 9.51184 1.46736C8.6401 6.68628 7.74845 7.69458 8.32573 10.5544C8.50437 11.4345 8.78964 12.1138 9.13159 12.673ZM15.2252 0.744226C16.126 6.08862 17.1696 7.24701 16.5516 10.0924C15.6336 14.3153 11.9401 13.817 12.1479 17.9166V24.7985C12.1479 26.1595 13.9152 26.4342 14.9825 26.6167C16.2253 26.8274 16.5277 26.9297 16.4897 27.2119C16.4499 28.0221 12.507 28.1914 11.6644 28.1914C10.8202 28.1914 6.87458 28.0218 6.83505 27.2119C6.79797 26.9297 7.09917 26.8274 8.3435 26.6167C9.4092 26.4342 11.1465 26.1598 11.1465 24.7985V17.9166C11.3527 13.817 7.69085 14.3153 6.77407 10.0924C6.15451 7.24671 7.16904 6.08472 8.10052 0.744226C8.22676 0.0102883 15.0998 0.00398427 15.2252 0.744226Z"
+                            fill="#FF9D2D"
+                          />
+                        </g>
                       </g>
                     </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_247_16826">
-                      <rect
-                        width="22"
-                        height="28"
-                        fill="white"
-                        transform="translate(0.660156 0.191406)"
-                      />
-                    </clipPath>
-                    <clipPath id="clip1_247_16826">
-                      <rect
-                        width="22"
-                        height="28"
-                        fill="white"
-                        transform="translate(0.660156 0.191406)"
-                      />
-                    </clipPath>
-                    <clipPath id="clip2_247_16826">
-                      <rect
-                        width="22"
-                        height="28"
-                        fill="white"
-                        transform="translate(0.660156 0.191406)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-                About Us
-              </h4>
-              <h3 className="font-[900] text-[38px] mt-2 text-[#010F1C]">
-                Put Your Page Heading Here...{" "}
-              </h3>
+                    <defs>
+                      <clipPath id="clip0_247_16826">
+                        <rect
+                          width="22"
+                          height="28"
+                          fill="white"
+                          transform="translate(0.660156 0.191406)"
+                        />
+                      </clipPath>
+                      <clipPath id="clip1_247_16826">
+                        <rect
+                          width="22"
+                          height="28"
+                          fill="white"
+                          transform="translate(0.660156 0.191406)"
+                        />
+                      </clipPath>
+                      <clipPath id="clip2_247_16826">
+                        <rect
+                          width="22"
+                          height="28"
+                          fill="white"
+                          transform="translate(0.660156 0.191406)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  About Us
+                </h4>
+                <h3 className="font-[900] text-[38px] mt-2 text-[#010F1C]">
+                  Put Your Page Heading Here...
+                </h3>
 
-              <p className="text-[#4D5765] font-[400] text-justify mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                inventore laborum est, vitae sed voluptates beatae tempore
-                labore neque ducimus soluta, facere optio deleniti nisi
-                reiciendis hic aspernatur veniam consequuntur!
-              </p>
+                <p className="text-[#4D5765] font-[400] text-justify mt-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia inventore laborum est, vitae sed voluptates beatae
+                  tempore labore neque ducimus soluta, facere optio deleniti
+                  nisi reiciendis hic aspernatur veniam consequuntur!
+                </p>
+              </div>
+
               <div className="flex items-center gap-3 mt-6">
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741884517/Container_yf749x.png"
                   alt=""
                 />
-
                 <ul>
                   <li className="flex items-center gap-2 text-[#010F1C] font-[500] mb-2">
                     <svg
@@ -411,14 +424,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[-700px] left-16">
+      <div className="sm:absolute hidden sm:block sm:bottom-[-700px] sm:left-16">
         <img
           src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_3_qpbyux.png"
           alt=""
         />
       </div>
 
-      <div className="absolute right-16 bottom-[-1200px]">
+      <div className="sm:absolute hidden sm:block sm:right-16 sm:bottom-[-1200px]">
         <img
           src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_4_bymu64.png"
           alt=""
@@ -432,9 +445,9 @@ const About = () => {
         }}
       >
         <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4 mt-20">
-          <div className="flex items-center gap-10">
-            <div>
-              <h4 className="flex items-center gap-2 text-[18px] font-[700] text-[#EB0029]">
+          <div className="sm:flex items-center gap-10">
+            <div className="sm:text-left text-center">
+              <h4 className="flex items-center sm:justify-start justify-center gap-2 leading-8 text-[18px] font-[700] text-[#EB0029]">
                 <svg
                   width="23"
                   height="29"
@@ -499,24 +512,24 @@ const About = () => {
                 The Best Sizzler Has Excellent Of{" "}
               </h3>
 
-              <p className="text-[#4D5765] font-[400] text-justify mt-5">
+              <p className="text-[#4D5765] font-[400] mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 inventore laborum est, vitae sed voluptates beatae tempore
                 labore neque ducimus soluta, facere optio deleniti nisi
                 reiciendis hic aspernatur veniam consequuntur!
               </p>
-              <p className="text-[#4D5765] font-[400] text-justify mt-5">
+              <p className="text-[#4D5765] font-[400] mt-5">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
                 inventore laborum est, vitae sed voluptates beatae tempore
                 labore neque ducimus soluta, facere optio deleniti nisi
                 reiciendis hic aspernatur veniam consequuntur!
               </p>
 
-              <div className="flex items-center gap-4 mt-14 border-t-1 border-[#E0E0E0] pt-5">
-                <button className="text-white rounded-full bg-[#EB0029] p-4 w-[40%] font-[600]">
+              <div className="flex items-center gap-4 sm:mt-14 sm:border-t-1 border-[#E0E0E0] pt-5">
+                <button className="text-white rounded-full bg-[#EB0029] p-4 sm:w-[40%] w-[100%] font-[600]">
                   Discover More
                 </button>
-                <div className="flex items-center gap-2">
+                {/* <div className="flex items-center gap-2">
                   <h4 className="font-[900] text-[52px] text-[#EB0029]">5</h4>
                   <div>
                     <p className="text-[#4D5765[ text-[15px]">Years Of</p>
@@ -524,12 +537,12 @@ const About = () => {
                       Experience
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
-            <img
-              src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741885147/Container_1_ck4ukf.png"
+            <img className="sm:mt-0 mt-10 w-[100%]"
+              src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741885147/Container_1_ck4ukf.png" 
               alt=""
             />
           </div>
@@ -537,7 +550,7 @@ const About = () => {
       </div>
 
       <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4">
-        <div className="mt-20 bg-[#010F1C] p-10 rounded-[15px] ">
+        <div className="mt-20 bg-[#010F1C] sm:p-10 p-5 rounded-[15px] ">
           <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-[#EB0029]">
             <svg
               width="23"
@@ -606,7 +619,7 @@ const About = () => {
             Lorem Ipsum is simply dummy text of the printing and <br />
             typesetting industry.
           </p>
-          <div className="flex items-center mt-10 justify-center">
+          <div className="sm:flex items-center mt-10 justify-center">
             <div className="flex flex-col items-center justify-center p-6">
               <img
                 src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741887069/feature_4_1.svg_kivpzn.png"
@@ -620,7 +633,7 @@ const About = () => {
                 printing and typesetting industry.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center border-x border-dashed p-6 border-white">
+            <div className="flex flex-col items-center justify-center sm:border-x sm:border-dashed p-6 sm:border-white">
               <img
                 src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742203022/feature_4_2.svg_hjy6on.png"
                 alt=""
@@ -650,16 +663,12 @@ const About = () => {
         </div>
       </div>
 
-    
       <Expert />
 
-    
-
-     
       <TestimonialComp />
 
       <div>
-        <div className="my-20 bg-white  rounded-[15px] ">
+        <div className="sm:my-20 my-10 bg-white rounded-[15px] mx-4 sm:mx-0">
           <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-black">
             Explore Our
           </h4>
@@ -668,87 +677,96 @@ const About = () => {
           </h3>
           <div className="mt-10">
             <Swiper
-              modules={[Pagination, Scrollbar, A11y, Autoplay]} // Removed Navigation module as we are not using it
-              spaceBetween={20}
-              slidesPerView={7}
+              modules={[Pagination, Scrollbar, A11y, Autoplay]} 
               autoplay={{
-                delay: 1000, // Auto slide delay in milliseconds (3000ms = 3 seconds)
-                disableOnInteraction: false, // Keep autoplay even after user interaction
+                delay: 100000000, 
+                disableOnInteraction: false, 
               }}
-              loop={true} // Enable looping
+              loop={true} // 
+              breakpoints={{
+              
+                640: {
+                  slidesPerView: 1,
+                  
+                },
+               1024: {
+                  slidesPerView: 7,
+                  spaceBetween: 20, 
+                },
+              }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt=""
+                  alt="" className="w-[100%]"
                 />
               </SwiperSlide>
             </Swiper>
