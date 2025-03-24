@@ -87,7 +87,7 @@ const Header = () => {
               </a>
             </div>
             <div>
-              <ul className="flex items-center gap-3">
+              <ul className="flex items-center gap-2">
                 <li>
                   <a href="">
                     <svg
@@ -158,7 +158,7 @@ const Header = () => {
           <div>
             <ul className="flex items-center gap-10">
               <li>
-                <a className="flex items-center gap-1 hover:text-[#DA0025]" href="">
+                <a className="flex items-center gap-1 hover:text-[#DA0025]" href="todaysspecial">
                   Today's Special
                   <svg
                     width="20"
@@ -202,85 +202,79 @@ const Header = () => {
                     />
                   </svg>
                 </a>
-                <div className="dropdown-content absolute hidden bg-white text-black shadow-lg rounded mt-2 w-200  z-10 pr-20 p-5">
-                  <div className="flex flex-wrap justify-between items-center">
+                <div className="dropdown-content absolute hidden bg-white text-black shadow-lg rounded mt-2 w-160  z-10  p-5">
+                  <div className="flex flex-wrap gap-9 items-center ">
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471937/OBJECTS_buxsga.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471937/OBJECTS_buxsga.png" className="w-[50px]" alt="" />
                         DONNER
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Frame_cwfw4s.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Frame_cwfw4s.png" className="w-[40px]" alt="" />
                         WRAPS
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_239205_givbng.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_239205_givbng.png" className="w-[40px]" alt="" />
                         BURGER
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Cakes_l97qpi.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Cakes_l97qpi.png" className="w-[48px]" alt="" />
                         DESSERTS
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                      <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Asset_3_4x_1_gap0o0.png" alt="" />
+                      <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Asset_3_4x_1_gap0o0.png" className="w-[45px]" alt="" />
                         PERI PERI CHICKEN
                       </a>
                    
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                          <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/hand-drawn-fried-chicken-illustration_561641-3588_1_llkwuj.png" alt="" />
+                          <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/hand-drawn-fried-chicken-illustration_561641-3588_1_llkwuj.png" className="w-[50px]" alt="" />
                         FRIED ZINGER CHICKEN
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/plate-with-toast-face-shape-with-apple-table_1_uplmyc.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/plate-with-toast-face-shape-with-apple-table_1_uplmyc.png" className="w-[50px]" alt="" />
                         KIDS MEAL
                       </a>
                       <a
                         href="#"
-                        className="block flex gap-2 items-center  transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red mb-2"
+                        className="block flex gap-2 items-center  transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                       >
-                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_su4vtw.png" alt="" />
+                        <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742471936/Group_su4vtw.png" className="w-[36px]" alt="" />
                         DRINKS OPTIONS
                       </a>
                      
                     </div>
-                    <div className="justify-end flex">
+                    <div className="justify-end flex mt-6">
                     <a
                         href="#"
-                        className="block flex gap-2 items-center  transition-all px-3 text-[24px] font-[600] transform hover:translate-x-2 text-[#eb0029] rounded-full border-2 border-[#eb0029] hover:svg-fill-red w-[50%]"
+                        className="block flex gap-2 items-center justify-center transition-all px-3 py-1  text-[22px] font-[600] transform hover:translate-x-2 text-[#eb0029] rounded-full border-2 border-[#eb0029] hover:svg-fill-red w-[50%]"
                       >
                         
                         MEAL DEAL COMBO
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="#0a58ca"
-                            d="m11 18l-6-6l6-6l1.4 1.4L7.825 12l4.575 4.6zm6.6 0l-6-6l6-6L19 7.4L14.425 12L19 16.6z"
-                          />
-                        </svg>
+                        
+<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.2071 7.29289C18.5976 7.68342 18.5976 8.31658 18.2071 8.70711L11.8431 15.0711C11.4526 15.4616 10.8195 15.4616 10.4289 15.0711C10.0384 14.6805 10.0384 14.0474 10.4289 13.6569L16.0858 8L10.4289 2.34315C10.0384 1.95262 10.0384 1.31946 10.4289 0.928932C10.8195 0.538408 11.4526 0.538408 11.8431 0.928932L18.2071 7.29289ZM1.5 9C0.947716 9 0.5 8.55228 0.5 8C0.5 7.44772 0.947716 7 1.5 7V9ZM17.5 9H1.5V7H17.5V9Z" fill="#DA0025"/>
+</svg>
+
                       </a>
                   </div>
                   </div>
@@ -289,7 +283,7 @@ const Header = () => {
                 <a className="hover:text-[#DA0025]" href="about-us">About Us</a>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="">Shop</a>
+                <a className="hover:text-[#DA0025]" href="product">Testimonial</a>
               </li>
               <li>
                 <a className="hover:text-[#DA0025]" href="gallery">Gallery</a>

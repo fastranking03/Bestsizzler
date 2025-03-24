@@ -337,10 +337,24 @@ const About = () => {
               </div>
 
               <div className="flex items-center gap-3 mt-6">
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741884517/Container_yf749x.png"
+                <div className="relative">
+                <img 
+                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742554558/about_1_2.jpg_z3sftr.png"
                   alt=""
                 />
+                <button className="absolute sm:top-16 sm:right-[-160px] cursor-pointer">
+
+                <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.279297" y="0.00195312" width="60" height="60" rx="30" fill="white"/>
+<rect x="0.279297" y="0.00195312" width="60" height="60" rx="30" fill="white"/>
+<rect x="0.279297" y="0.00195312" width="60" height="60" rx="30" fill="#DA0025"/>
+<path d="M37.291 28.1404C37.778 28.4724 38.0326 28.9262 38.0547 29.5017C38.0326 30.0994 37.778 30.5421 37.291 30.8299L27.7285 36.6736C27.1973 37.0057 26.666 37.0278 26.1348 36.74C25.6035 36.4301 25.3268 35.9653 25.3047 35.3455V23.658C25.3268 23.0382 25.6035 22.5734 26.1348 22.2635C26.666 21.9757 27.1973 21.9868 27.7285 22.2967L37.291 28.1404Z" fill="white"/>
+</svg>
+
+<iframe src="" frameborder="0"></iframe>
+
+                </button>
+</div>
                 <ul>
                   <li className="flex items-center gap-2 text-[#010F1C] font-[500] mb-2">
                     <svg
@@ -667,112 +681,104 @@ const About = () => {
 
       <TestimonialComp />
 
-      <div>
-        <div className="sm:my-20 my-10 bg-white rounded-[15px] mx-4 sm:mx-0">
-          <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-black">
-            Explore Our
-          </h4>
-          <h3 className="text-[39px] text-[#010F1C] font-[900] text-center">
-            Gallery
-          </h3>
-          <div className="mt-10">
-            <Swiper
-              modules={[Pagination, Scrollbar, A11y, Autoplay]} 
-              autoplay={{
-                delay: 100000000, 
-                disableOnInteraction: false, 
-              }}
-              loop={true} // 
-              breakpoints={{
-              
-                640: {
-                  slidesPerView: 1,
-                  
-                },
-               1024: {
-                  slidesPerView: 7,
-                  spaceBetween: 20, 
-                },
-              }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-            >
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
-                  alt="" className="w-[100%]"
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-      </div>
+        <div className='sm:block hidden'>
+              <div className="my-20 bg-white  rounded-[15px] ">
+                <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-black">
+                  Explore Our
+                </h4>
+                <h3 className="text-[39px] text-[#010F1C] font-[900] text-center">
+                  Gallery
+                </h3>
+                <div className="mt-10">
+                  <Swiper
+                    modules={[Pagination, Scrollbar, A11y, Autoplay]} // Removed Navigation module as we are not using it
+                    spaceBetween={20}
+                    slidesPerView={7}
+                    autoplay={{
+                      delay: 1000, // Auto slide delay in milliseconds (3000ms = 3 seconds)
+                      disableOnInteraction: false, // Keep autoplay even after user interaction
+                    }}
+                    loop={true} // Enable looping
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log("slide change")}
+                  >
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772447/Frame_1000006917_nnzhbx.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772446/Frame_1000006916_xranwe.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006915_ru4x1e.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img
+                        src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741772445/Frame_1000006914_adhttd.png"
+                        alt=""
+                      />
+                    </SwiperSlide>
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+      
 
       <Footer />
     </div>

@@ -11,7 +11,9 @@ import Gallery from "./pages/Gallery"
 import Thankyou from "./pages/Thankyou"
 import PrivacyPolicy from "./pages/PrivacyPolicy"
 import TermsandConditions from "./pages/TermsandConditions"
-
+import TodaysSpecial from "./pages/TodaysSpecial"
+import Orders from "./pages/Orders"
+import TrackOrder from "./pages/TrackOrder"
  
 function App() {
  
@@ -32,6 +34,9 @@ function App() {
           <Route path="/thankyou" element={<Thankyou/>} />
           <Route path="/termsandconditions" element={<TermsandConditions/>} />
           <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+          <Route path="/todaysspecial" element={<TodaysSpecial/>}/>
+          <Route path="/orders" element={<Orders/>}/>
+          <Route path="/trackorder" element={<TrackOrder/>}/>
        </Routes>
      </BrowserRouter>
   )
