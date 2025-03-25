@@ -19,6 +19,9 @@ import Signup from "./pages/Signup"
 import PhoneVarification from "./pages/PhoneVarification"
 import EnterCode from "./pages/EnterCode"
 import RegSuccessful from "./pages/RegSuccessful"
+import Testimonial from "./pages/Testimonial"
+import MealDeal from "./pages/MealDeal"
+ 
 function App() {
  
 
@@ -46,6 +49,8 @@ function App() {
           <Route path="/phone-verification" element={<PhoneVarification />} />
           <Route path="/enter-code" element={<EnterCode />} />
           <Route path="/reg-successful" element={<RegSuccessful />} />
+          <Route path="/testimonial" element={<Testimonial/>}/>
+          <Route path="/mealdeal" element={<MealDeal/>}/>
        </Routes>
      </BrowserRouter>
   )
