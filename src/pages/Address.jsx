@@ -10,7 +10,17 @@ const Address = () => {
         <div className="flex flex-col justify-left h-[80%] lx:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px]">
           <div className="mb-2 mx-4">
             <button className="rounded-4xl bg-white p-2 border-1 border-white hover:border-1 hover:border-gray-600 cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#000" d="m4 10l-.707.707L2.586 10l.707-.707zm17 8a1 1 0 1 1-2 0zM8.293 15.707l-5-5l1.414-1.414l5 5zm-5-6.414l5-5l1.414 1.414l-5 5zM4 9h10v2H4zm17 7v2h-2v-2zm-7-7a7 7 0 0 1 7 7h-2a5 5 0 0 0-5-5z"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#000"
+                  d="m4 10l-.707.707L2.586 10l.707-.707zm17 8a1 1 0 1 1-2 0zM8.293 15.707l-5-5l1.414-1.414l5 5zm-5-6.414l5-5l1.414 1.414l-5 5zM4 9h10v2H4zm17 7v2h-2v-2zm-7-7a7 7 0 0 1 7 7h-2a5 5 0 0 0-5-5z"
+                />
+              </svg>
             </button>
           </div>
           <div className="flex justify-between items-center mx-6">
@@ -143,27 +153,30 @@ const Address = () => {
                 </div>
 
                 <div className="w-full mt-5">
+                  <div className="flex flex-col mb-5 gap-1">
+                    <h2 className="text-2xl font-medium ">Billing Information</h2>
+                    <div className="flex gap-2 mt-1">
+                      <input type="checkbox" className="accent-red-500" />
+                      <label htmlFor="home" className="font-normal">
+                        Same as delivery address
+                      </label>
+                    </div>
+                  </div>
                   <div className="flex flex-col w-full justify-left">
-                    <h2 className="text-2xl font-medium ">Save Address as</h2>
+                    <h2 className="text-2xl font-medium ">Billing Type</h2>
                     <div className="flex gap-6 mt-4">
                       <div className="flex gap-2">
                         <input type="radio" className="accent-red-500" />
                         <label htmlFor="home" className="font-normal">
-                          Home
+                          Personal
                         </label>
                       </div>
                       <div className="flex gap-2">
                         <input type="radio" className="accent-red-500" />
                         <label htmlFor="home" className="font-normal">
-                          Office
+                          Commercial
                         </label>
                       </div>
-                    </div>
-                    <div className="flex gap-2 mt-1">
-                      <input type="checkbox" className="accent-red-500" />
-                      <label htmlFor="home" className="font-normal">
-                        Make this my default address
-                      </label>
                     </div>
                   </div>
                 </div>
@@ -258,7 +271,9 @@ const Address = () => {
                     >
                       <circle cx="8.76953" cy="8.19141" r="8" fill="#DA0025" />
                     </svg>
-                    <span className="lg:text-base md:text-base sm:text-medium text-sm">Pay on delivery avaliable</span>
+                    <span className="lg:text-base md:text-base sm:text-medium text-sm">
+                      Pay on delivery avaliable
+                    </span>
                   </div>
                 </div>
 
@@ -269,7 +284,7 @@ const Address = () => {
                       className="flex gap-1 items-center py-1 px-3 rounded-md cursor-pointer"
                     >
                       <svg
-                        className="lg:w-[45px] md:w-[40px] sm:w-[35] w-[30px]  lg:h-[40px] md:h-[35] sm:h-[30px] h-[25]"
+                        className="lg:w-[45px] md:w-[40px] sm:w-[35px] w-[30px]  lg:h-[40px] md:h-[35px] sm:h-[30px] h-[25px]"
                         viewBox="0 0 60 61"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -338,35 +353,35 @@ const Address = () => {
 
                 <div className="border-t-1 border-b-1 border-gray-200">
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center items-center py-1 text-black border-gray-200 mt-4 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center items-center py-1 text-black border-gray-200 mt-4 font-normal">
                       <h4 className="col-span-2">Sub Total</h4>
                       <h4 className="col-span-2">₤960.00</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Shipping</h4>
                       <h4 className="col-span-2">Free</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Discount</h4>
                       <h4 className="col-span-2">₤50.00</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Tax</h4>
                       <h4 className="col-span-2">₤10.00</h4>
                     </div>
                   </div>
                 </div>
                 <div className="flex justify-evenly items-center mt-1 w-full">
-                  <div className="grid grid-cols-4 text-sm gap-20 justify-center  py-1 text-black border-gray-200 font-bold">
+                  <div className="grid grid-cols-4 text-sm gap-20 justify-center  py-1 text-black border-gray-200 font-medium">
                     <h4 className="col-span-2">Total</h4>
                     <h4 className="col-span-2">₤1250.00</h4>
                   </div>
@@ -401,17 +416,23 @@ const Address = () => {
           <div className="w-full">
             {/* Close Button */}
             <div className="flex w-full px-6 items-center pt-4 pb-1">
-              <button onClick={() => setIsOpen(false)} className="text-red-500 cursor-pointer lg:text-2xl md:text-xl sm:text-xl text-lg">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-red-500 cursor-pointer lg:text-2xl md:text-xl sm:text-xl text-lg"
+              >
                 ❌
               </button>
             </div>
 
             <div className="border-1 border-gray-200 mx-5 mt-2 pb-3 rounded-sm shadow-sm cursor-pointer hover:shadow-lg">
-            <div className="flex w-full mb-2 py-2 px-6 bg-[#f4f4f4] justify-end border-b-1 border-gray-200">
-              <button type="button" className="cursor-pointer text-red-500 hover:text-black">
-                <span className="font-medium text-xl">Delete</span>
-              </button>
-            </div>
+              <div className="flex w-full mb-2 py-2 px-6 bg-[#f4f4f4] justify-end border-b-1 border-gray-200">
+                <button
+                  type="button"
+                  className="cursor-pointer text-red-500 hover:text-black"
+                >
+                  <span className="font-medium text-xl">Delete</span>
+                </button>
+              </div>
               {/* Radio and Label */}
               <div className="flex px-6 justify-between">
                 <h2 className="text-lg lg:text-xl md:text-xl sm:text-lg font-medium">

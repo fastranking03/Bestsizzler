@@ -150,35 +150,35 @@ const Checkout = () => {
 
                 <div className="border-t-1 border-b-1 border-gray-200">
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center items-center py-1 text-black border-gray-200 mt-4 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center items-center py-1 text-black border-gray-200 mt-4 font-normal">
                       <h4 className="col-span-2">Sub Total</h4>
                       <h4 className="col-span-2">₤960.00</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Shipping</h4>
                       <h4 className="col-span-2">Free</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Discount</h4>
                       <h4 className="col-span-2">₤50.00</h4>
                     </div>
                   </div>
 
                   <div className="flex justify-evenly items-center w-full">
-                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-medium">
+                    <div className="grid grid-cols-4 text-sm gap-20 justify-center py-1 text-black border-gray-200 font-normal">
                       <h4 className="col-span-2">Tax</h4>
                       <h4 className="col-span-2">₤10.00</h4>
                     </div>
                   </div>
                 </div>
                 <div className="flex justify-evenly items-center mt-1 w-full">
-                  <div className="grid grid-cols-4 text-sm gap-20 justify-center  py-1 text-black border-gray-200 font-bold">
+                  <div className="grid grid-cols-4 text-sm gap-20 justify-center  py-1 text-black border-gray-200 font-medium">
                     <h4 className="col-span-2">Total</h4>
                     <h4 className="col-span-2">₤1250.00</h4>
                   </div>

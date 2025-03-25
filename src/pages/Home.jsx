@@ -36,12 +36,12 @@ function Home() {
 
       {/* Hero Section */}
        <HeroComp/>
-       <MenuComp/>
+        <MenuComp/>
        <AboutComp/>
        <SpecialComp/>
        <PopularComp/>
        <GalleryComp/>
-       <Footer/>
+       <Footer/> 
     </>
   );
 }
