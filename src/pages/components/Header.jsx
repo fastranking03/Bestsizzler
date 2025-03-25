@@ -257,7 +257,7 @@ const Header = () => {
                     </div>
                     <div className="justify-end flex mt-6">
                     <a
-                        href="#"
+                        href="mealdeal"
                         className="block flex gap-2 items-center justify-center transition-all px-3 py-1  text-[22px] font-[600] transform hover:translate-x-2 text-[#eb0029] rounded-full border-2 border-[#eb0029] hover:svg-fill-red w-[50%]"
                       >
                         

@@ -699,7 +699,7 @@ const TodaysSpecial = () => {
           </div>
     
           <div className="sm:block hidden">
-            <div className="my-20 bg-white  rounded-[15px] ">
+            <div className="my-20 bg-white  rounded-[15px] pt-10 ">
               <h4 className="flex items-center justify-center gap-2 text-[18px] font-[700] text-black">
                 Explore Our
               </h4>
