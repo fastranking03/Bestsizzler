@@ -14,6 +14,8 @@ import TermsandConditions from "./pages/TermsandConditions"
 import TodaysSpecial from "./pages/TodaysSpecial"
 import Orders from "./pages/Orders"
 import TrackOrder from "./pages/TrackOrder"
+import Testimonial from "./pages/Testimonial"
+import MealDeal from "./pages/MealDeal"
  
 function App() {
  
@@ -37,6 +39,8 @@ function App() {
           <Route path="/todaysspecial" element={<TodaysSpecial/>}/>
           <Route path="/orders" element={<Orders/>}/>
           <Route path="/trackorder" element={<TrackOrder/>}/>
+          <Route path="/testimonial" element={<Testimonial/>}/>
+          <Route path="/mealdeal" element={<MealDeal/>}/>
        </Routes>
      </BrowserRouter>
   )
