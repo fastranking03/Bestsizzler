@@ -184,10 +184,8 @@ const Header = () => {
                   </svg>
                 </a>
               </li>
-              <li className="relative hover:text-[#DA0025]">
-                <a
-                  className="dropbtn flex items-center gap-1 underline "
-                  href=""
+              <li className="relative menu-drop hover:text-[#DA0025]">
+                <Link className="dropbtn flex items-center gap-1 underline cursor-pointer"
                 >
                   Menu
                   <svg
@@ -205,11 +203,11 @@ const Header = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
-                </a>
-                <div className="dropdown-content absolute hidden bg-white text-black shadow-lg rounded mt-2 w-160  z-10  p-5">
+                </Link>
+                <div className="dropdown-content absolute  bg-white text-black shadow-lg rounded mt-2 w-160  z-10  p-5 top-[16px]">
                   <div className="flex flex-wrap gap-9 items-center ">
-                    <a
-                      href="#"
+                    <Link
+                      to="/menu"
                       className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
                     >
                       <img
@@ -218,7 +216,7 @@ const Header = () => {
                         alt=""
                       />
                       DONNER
-                    </a>
+                    </Link>
                     <a
                       href="#"
                       className="block flex gap-2 items-center transition-all font-[600] hover:text-[#eb0029] transform hover:translate-x-2 hover:svg-fill-red  text-[14px]"
@@ -321,26 +319,27 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="about-us">
+                <Link className="hover:text-[#DA0025]" to="/about-us">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="product">
+                <Link
+                 className="hover:text-[#DA0025]" to="/testimonial">
                   Testimonial
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="hover:text-[#DA0025]" href="gallery">
+                <Link className="hover:text-[#DA0025]" to="/gallery">
                   Gallery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
             <div>
-              <a href="">
+              <Link to="">
                 <svg
                   width="22"
                   height="28"
@@ -353,7 +352,7 @@ const Header = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

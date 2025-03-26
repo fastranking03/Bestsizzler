@@ -62,34 +62,35 @@ function HeroComp() {
       <section>
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
-          autoplay={{ delay: 5000000 }}
+          autoplay={{ delay: 3000 }}
           loop={true}
           navigation
+          speed={1000}
           pagination={{ clickable: true }}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
           className="w-full "
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="relative">
-              <div className="absolute top-15 left-10">
+              <div className="absolute lg:top-15 md:top-4 sm:top-9 top-15  left-10">
                  <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1741862635/tree_2.png_gp0svr.png" alt="" />
               </div>
               <div
-                className="bg-cover bg-center flex items-center h-[700px]"
+                className="bg-cover bg-center flex items-center  lg:h-[700px] md:h-[600px] sm:h-[500px] h-[400px]"
                 style={{ backgroundImage: `url('${slide.image}')` }}
               >
                 <div className="container mx-auto flex items-center justify-between px-6">
                   {/* Animated Text Section */}
                   <motion.div
-                    className="w-1/2"
-                    initial={{ opacity: 0, x: -100 }}
+                    className="lg:w-[50%] md:w-[50%] sm:w-[50%] w-full lg:text-left md:text-left sm:text-left text-center z-[1]"
+                    initial={{ opacity: 0, x: 200 }}
                     animate={activeIndex === index ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.8 }}
+                    transition={{ duration: 1.5 }}
                   >
-                    <p className="text-white text-xl montserrat">
+                    <p className="text-white lg:text-xl md:text-lg sm:text-lg text-base montserrat">
                       {slide.subtitle}
                     </p>
-                    <h1 className="uppercase text-6xl font-bold text-white leading-tight">
+                    <h1 className="uppercase lg:text-6xl md:text-6xl sm:text-5xl text-4xl font-bold text-white leading-tight">
                     {slide.title.split(" ").map((word, index) => (
                     <React.Fragment key={index}>
                       {word} {(index + 1) % 2 === 0 && <br />}
@@ -104,13 +105,13 @@ function HeroComp() {
                       }
                       transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                      <a href="#" className="text-white bg-red-600 px-5 py-3 rounded-full montserrat text-lg"> Explore Menu
+                      <a href="#" className="text-white bg-red-600 px-5 py-3 rounded-full montserrat lg:text-lg md:text-lg sm:text-base text-sm"> Explore Menu
                       </a>
                     </motion.div>
                   </motion.div>
 
                   {/* Animated Images Section */}
-                  <div className="sm:w-[50%]">
+                  <div className="lg:w-[50%] md:w-[50%] sm:w-[50%] w-0">
                     <div className="relative top-10">
                       {images
                         .slice()

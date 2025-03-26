@@ -22,10 +22,10 @@ const Testimonial = () => {
       </div>
       <div className="relative">
       <div>
-            <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_7_ogukya.png" className="absolute left-[-60px] top-[-88px]" alt="" />
+            <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_7_ogukya.png" className="absolute hidden sm:block left-[-60px] top-[-88px]" alt="" />
         </div>
         <div>
-            <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_7_ogukya.png" className="absolute bottom-[-100px] right-[-60px]" alt="" />
+            <img src="https://res.cloudinary.com/dj7wogsju/image/upload/v1742229323/Component_8_7_ogukya.png" className="absolute hidden sm:block bottom-[-100px] right-[-60px]" alt="" />
         </div>
       
       <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4 ">

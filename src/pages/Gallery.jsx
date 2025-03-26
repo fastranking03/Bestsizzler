@@ -17,7 +17,7 @@ const Gallery = () => {
         }}
         id="Hero"
       >
-        <h2 className="text-center text-white text-[80px] font-[400]">
+        <h2 className="text-center text-white text-[60px] font-[500]">
           Gallery
         </h2>
       </div>

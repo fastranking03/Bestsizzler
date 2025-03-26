@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Product from "./pages/Product"
+import Menu from "./pages/Menu"
 import ProductDetail from "./pages/ProductDetail"
 import Cart from "./pages/Cart"
 import Address from "./pages/Address"
@@ -36,7 +36,7 @@ function App() {
           <Route path="/checkout" element={<Checkout/>} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="/contact-us" element={<Contact/>} />
-          <Route path="/product" element={<Product/>} />
+          <Route path="/menu" element={<Menu/>} />
           <Route path="/product-details" element={<ProductDetail/>} />
           <Route path="/thankyou" element={<Thankyou/>} />
           <Route path="/termsandconditions" element={<TermsandConditions/>} />

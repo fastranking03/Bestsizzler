@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import PopularComp from "./components/home/PopularComp";
 import GalleryComp from "./components/home/GalleryComp";
 import HeroComp from "./components/home/HeroComp";
+import ResponsiveHeader from "./components/ResponsiveHeader";
 
 function Home() {
   return (
@@ -33,10 +34,11 @@ function Home() {
       </Helmet>
       
       <Header />
+      <ResponsiveHeader/>
 
       {/* Hero Section */}
        <HeroComp/>
-        <MenuComp/>
+       <MenuComp/>
        <AboutComp/>
        <SpecialComp/>
        <PopularComp/>

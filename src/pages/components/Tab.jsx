@@ -55,13 +55,13 @@ export default function TabsLgPillLeadingIcon() {
     <>
       <section className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px] sm:mx-auto mx-4" aria-multiselectable="false">
         <ul
-          className="flex justify-center gap-2"
+          className="flex justify-center gap-2 overflow-auto sm:pl-0 pl-20 mt-10"
           role="tablist"
           ref={wrapperRef}
         >
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 1
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -85,7 +85,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 2
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -109,7 +109,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 3
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""
@@ -133,7 +133,7 @@ export default function TabsLgPillLeadingIcon() {
           </li>
           <li role="presentation">
             <button
-              className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
+              className={`inline-flex h-12 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded sm:px-6 px-3 sm:text-sm text-xs font-medium tracking-wide transition duration-300 focus-visible:outline-none disabled:cursor-not-allowed border border-[#989898] text-[#989898] hover:text-[#DA0025] hover:border-[#DA0025] ${
                 tabSelected.currentTab === 4
                   ? "bg-white text-[#DA0025] border-[#DA0025]"
                   : ""

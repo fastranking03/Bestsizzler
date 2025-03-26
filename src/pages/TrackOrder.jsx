@@ -9,12 +9,12 @@ const TrackOrder = () => {
   return (
     <div>
       <Header />
-      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px]  mx-2 mx-auto mt-10">
-     
-          <Tracking />
-      
-        <div className="flex flex-col px-4 lg:flex-row md:flex-row sm:flex-col justify-center items-center w-full h-auto mb-10 relative">
-          <div className="flex flex-col justify-left h-[80%] lx:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px]">
+      <div className="xl:w-[1280px] lg:w-[1080px] md:w-[786px] sm:w-[600px]  mx-2 sm:mx-auto mt-10">
+
+        <Tracking />
+
+        <div className="h-auto mb-10 relative">
+          <div className="flex flex-col  h-[80%]">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 lg:gap-6 mt-10">
               {/* Left Box*/}
               <div className="lg:col-span-3 sm:col-span-2 col-span-1">
@@ -150,10 +150,7 @@ const TrackOrder = () => {
 
           {/* Overlay (Optional, for closing on outside click) */}
           {isOpen && (
-            <div
-              className="fixed inset-0  bg-opacity-30 z-40"
-              onClick={() => setIsOpen(false)}
-            ></div>
+            <div className="fixed inset-0  bg-opacity-30 z-40" onClick={() => setIsOpen(false)}></div>
           )}
 
           {/* Sliding Panel */}
@@ -165,10 +162,7 @@ const TrackOrder = () => {
             <div className="w-full">
               {/* Close Button */}
               <div className="flex w-full px-6 items-center pt-4 pb-1">
-                <button
-                  onClick={() => setIsOpen(false)}
-                  className="text-red-500 cursor-pointer lg:text-2xl md:text-xl sm:text-xl text-lg"
-                >
+                <button onClick={() => setIsOpen(false)} className="text-red-500 cursor-pointer lg:text-2xl md:text-xl sm:text-xl text-lg" >
                   ❌
                 </button>
               </div>
@@ -213,6 +207,7 @@ const TrackOrder = () => {
                   </span>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
